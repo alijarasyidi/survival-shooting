@@ -1,0 +1,33 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+
+public class GameOverManager : MonoBehaviour
+{
+    public Text warningText;
+    public PlayerHealth playerHealth;
+
+    private bool isGameOver = false;
+
+    Animator anim;
+
+    void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+
+    void Update()
+    {
+        if (playerHealth.currentHealth <= 0 && !isGameOver)
+        {
+            anim.SetTrigger("GameOver");
+            isGameOver = true;
+        }
+    }
+
+    public void ShowWarning(float enemyDistance)
+    {
+        //warningText.text = string.Format("! {0} m",Mathf.RoundToInt(enemyDistance));
+        anim.SetTrigger("Warning");
+    }
+}
