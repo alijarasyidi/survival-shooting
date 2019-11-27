@@ -14,4 +14,4 @@ Move with <b>[w, a, s, d]</b>. aim using mouse, and shoot with <b>[left click mo
 
 
 
-Download game boild [here](https://drive.google.com/open?id=1wgeSbn0a-yX1O35mpERjrWSPLVNsNtVA).
+Download game build [here](https://drive.google.com/open?id=1wgeSbn0a-yX1O35mpERjrWSPLVNsNtVA).
